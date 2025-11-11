@@ -114,7 +114,7 @@ class NoBadNovel(
             PagedList(
                 list = books,
                 index = index,
-                isLastPage = books.isEmpty() || doc.selectFirst(".pagination a[href*=page/${page + 1}]") == null
+                isLastPage = books.isEmpty() || doc.selectFirst("div a[href*=series/page/${page + 1}]") == null
             )
         }
     }
