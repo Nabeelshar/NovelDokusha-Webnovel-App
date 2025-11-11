@@ -27,4 +27,5 @@ class ReadNovelFull(
     // Specific ajax settings
     override val novelIdSelector = "#rating[data-novel-id]"
     override val ajaxChapterPath = "ajax/chapter-archive"
+    override val selectPaginationLastPage = "li.last"
 }
